@@ -8,37 +8,38 @@ body{
 	background: black;
 
 }
-.left{
-	flex-basis: 25%;
-	position: sticky;
-	top: 0px;
-	align-self: flex-start;
+/*.all{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}*/
+
+.all:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .left-side{
-	margin: 20px 40px;
-	width: 15%;
+	padding: 20px 20px;
+	position: sticky;
 	float: left;
-
-	
-	
-
-	
+	width: 15%;
+	top: 0px;
 }
 .left-side img{
-	width: 32px;
+	width: 25px;
 }
 
 .menu-link li{
 	margin-top: 18px;
-	font-size: 16px;
+	font-size: 14px;
 	list-style: none;
 
 }
 .menu-lnik li, a{
 	text-decoration: none;
 	color: white;
-
 }
 .left-side input[type=submit] {
 	background-color: #357EC7;
@@ -60,12 +61,12 @@ body{
 
 .profile-link{
 	bottom: 0;
-	margin-top: 80%;
-	
+	position: fixed;
+	margin-bottom: 30px;
 }
 .profile-link img{
 	border-radius: 25px;
-	width: 35px;
+	width: 25px;
 	float: left;
 	margin-right: 12px;
 
@@ -76,7 +77,7 @@ body{
 
 }
 .profile-link div{
-	margin-top: 20px;
+	font-size: 14px;
 }
 
 
@@ -88,14 +89,10 @@ body{
 
 .main-content{
 	margin-top: 0px;
-	width: 50%;
 	border: 1px solid gray;
 	border-radius: 3px;
-
-	
-	
-
-	
+	width: 55%;
+	float: left;
 }
 .main-content input[type=submit] {
 	background-color: #357EC7;
@@ -130,12 +127,8 @@ body{
 	margin-top: -15px;
 }
 .mainnn{
-	margin-top: -15px;
-	padding: 15px;
+	padding-left: 10px;
 }
-
-
-
 
 .main-content h4, h5{
 	color: white;
@@ -206,25 +199,13 @@ hr{
 }
 
 
-.right-side{
-	
-	flex-basis: 25%;
-	position: sticky;
-	top: 0px;
-	align-self: flex-start;
-	float: right;
-	width: 25%;
-	margin-top: 20px;
 
-
-
-}
 .trends{
 	color: white;
 	margin-top: 25px;
 	background: rgb(255, 255, 255, 0.1); 
 	border-radius: 15px;
-	width: 85%;
+	
 	border: 1px solid #3895D3;
 
 }
@@ -276,21 +257,20 @@ hr{
 	margin-top: 0px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 750px){
 	.right-side{
 		display: none;
 	}
+
 	.left-side{
-		width: 1%;
+		width: 8%;
 	}
 
 	.main-content{
-		width: 78%;
-		margin-left: 50px;
+		width: 82%;
 	}
 	.main-post{
-		width: 78%;
-		margin-left: 50px;
+		margin-left: 0px;
 	}
 
 	.profile-link img{
@@ -323,7 +303,17 @@ hr{
 }
 
 
-@media (min-width: 1000px){
+@media (min-width: 750px){
+	.right-side{
+	position: sticky;
+	top: 0px;
+	float: left;
+	width: 25%;
+	margin: 20px 10px;
+}
+.main-content{
+	width: 50%;
+}
    .Tweetts{
 					display: none;
 	}
@@ -337,7 +327,6 @@ hr{
 .message{
 	color: white;
 	text-align: left;
-	width: 90%;
 	margin-top: 26vh;
 }
 .message h3{
