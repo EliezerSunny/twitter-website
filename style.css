@@ -171,7 +171,7 @@ hr{
 				margin-top: 20px;
 }
 .comment li{
-	
+	align-content: center;
 	display: inline;
 	margin-left: 14%;
 	width: 20%;
@@ -266,11 +266,11 @@ hr{
 	}
 
 	.left-side{
-		width: 4%;
+		display: none;
 	}
 
 	.main-content{
-		width: 82%;
+		width: 100%;
 	}
 	.main-post{
 		margin-left: 0px;
