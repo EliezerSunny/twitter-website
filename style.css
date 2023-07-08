@@ -271,6 +271,7 @@ hr{
 
 	.main-content{
 		width: 100%;
+		border: none;
 	}
 	.main-post{
 		margin-left: 0px;
